@@ -1,12 +1,12 @@
 export const bs = {
     nav: {
         map: "Mapa",
-        home: "Home",
+        home: "Početna",
         news: "Vijesti",
         organizations: "Organizacije",
         events: "Događaji",
         contact: "Kontakt",
-        images: "Slike",
+        images: "Galerija",
         weather: "Vrijeme",
     },
     index: {
