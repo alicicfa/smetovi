@@ -26,6 +26,7 @@ export const en: Translations = {
         work_hours: "Working hours",
         open: "Open",
         closed: "Closed",
+        unknown: "Unknown",
         type_prefix: "Activities",
         phone: "Phone",
         contact: "Contact",
