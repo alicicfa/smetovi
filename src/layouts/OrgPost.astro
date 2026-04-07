@@ -43,19 +43,13 @@ const tr = t(lang);
           <h2 class="text-lg font-atkinson text-gray-500">
             {tr.organizations.phone}: {phone}
           </h2>
-          <h2 class="text-lg font-atkinson text-gray-500">
-            {tr.organizations.contact}: <a
-              href={contact}
-              class="text-blue-500 underline">{contact}</a
-            >
-          </h2>
-          <h2 class="text-lg font-atkinson text-gray-500">
-            Telefon: {phone}
-          </h2>
           {
             contact && (
               <h2 class="text-lg font-atkinson text-gray-500">
-                Kontakt: {contact}
+                {tr.organizations.contact}: <a
+                  href={contact}
+                  class="text-blue-500 underline">{contact}</a
+                >
               </h2>
             )
           }
@@ -90,9 +84,15 @@ const tr = t(lang);
             )
           }
           <h2 class="text-lg font-atkinson text-gray-500">
-            Lokacija: <a href={mapUrl} class="text-blue-500 underline"
-              >Prikaži na mapi</a
+            {tr.organizations.location}:{" "}
+            <a
+              href={mapUrl}
+              class="text-blue-500 underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              {tr.organizations.show_on_map}
+            </a>
           </h2>
         </div>
         <slot />
